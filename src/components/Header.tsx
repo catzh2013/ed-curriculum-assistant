@@ -28,10 +28,10 @@ export const Header: React.FC<HeaderProps> = ({
             <div>
               <div className="flex items-center space-x-2">
                 <span className="font-serif font-bold text-lg text-slate-100 tracking-tight">
-                  Nexus Curriculum Assistant
+                  Curriculum Assistant
                 </span>
                 <span className="bg-sky-950 text-sky-300 border border-sky-800/80 text-[11px] font-medium px-2 py-0.5 rounded">
-                  Nexus Institute
+                  Internal Studio
                 </span>
               </div>
               <p className="text-xs text-slate-400">

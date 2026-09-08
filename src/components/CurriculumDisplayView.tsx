@@ -310,7 +310,7 @@ export const CurriculumDisplayView: React.FC<CurriculumDisplayViewProps> = ({
           )}
         </div>
         <p className="text-xs text-slate-600 mb-4">
-          Nexus allows iterative revision. Describe changes you want to see—such as adjusting the pace, changing text suggestions, tightening skill scaffolding, or reorienting themes.
+          You can make iterative revisions. Describe changes you want to see—such as adjusting the pace, changing text suggestions, tightening skill scaffolding, or reorienting themes.
         </p>
 
         {/* Quick Suggestion Chips */}

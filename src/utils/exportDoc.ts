@@ -128,7 +128,7 @@ export function exportCurriculumToDoc(curriculum: CurriculumOutput) {
       ${docWordStyles}
     </head>
     <body>
-      <div class="badge">NEXUS INSTITUTE • CURRICULUM BLUEPRINT</div>
+      <div class="badge">CURRICULUM BLUEPRINT</div>
       <h1>${sanitize(curriculum.programTitle)}</h1>
 
       <h2>Program Overview</h2>
@@ -164,7 +164,7 @@ export function exportCurriculumToDoc(curriculum: CurriculumOutput) {
       </table>
 
       <div class="footer">
-        Generated with Nexus Curriculum Assistant • Nexus Institute Reading & Writing Programs
+        Generated with Curriculum Assistant • Reading & Writing Programs
       </div>
     </body>
     </html>
@@ -185,7 +185,7 @@ export function exportLessonToDoc(lesson: LessonPlan, programTitle?: string) {
       ${docWordStyles}
     </head>
     <body>
-      <div class="badge">NEXUS INSTITUTE • WEEK ${lesson.weekNumber} LESSON PLAN</div>
+      <div class="badge">WEEK ${lesson.weekNumber} LESSON PLAN</div>
       <h1>${sanitize(lesson.lessonTitle)}</h1>
       ${programTitle ? `<p style="color:#475569; font-weight: bold;">Program: ${sanitize(programTitle)}</p>` : ""}
 
@@ -278,7 +278,7 @@ export function exportLessonToDoc(lesson: LessonPlan, programTitle?: string) {
       <p style="font-style: italic;">${sanitize(lesson.teacherNotes).replace(/\n/g, "<br/>")}</p>
 
       <div class="footer">
-        Generated with Nexus Curriculum Assistant • Nexus Institute Reading & Writing Programs
+        Generated with Curriculum Assistant • Reading & Writing Programs
       </div>
     </body>
     </html>

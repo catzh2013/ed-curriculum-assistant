@@ -33,7 +33,7 @@ export const CurriculumFormView: React.FC<CurriculumFormViewProps> = ({
             </h1>
             <p className="text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
               Describe your desired instructional goals, themes, and lesson structure.
-              Nexus will formulate a coherent, sequentially scaffolded multi-week curriculum map and weekly lesson plans.
+              The assistant will formulate a coherent, sequentially scaffolded multi-week curriculum map and weekly lesson plans.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ export const CurriculumFormView: React.FC<CurriculumFormViewProps> = ({
         <div className="bg-amber-50/70 border border-amber-200/70 rounded-lg p-3.5 text-xs text-amber-900 flex items-start space-x-2.5">
           <Lightbulb className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
           <div>
-            <span className="font-semibold">Flexible Institutional Framework:</span> Nexus Institute adapts to your specific goals and preferences rather than imposing a rigid predetermined methodology. Every input below directly shapes the curriculum draft.
+            <span className="font-semibold">Flexible Instructional Framework:</span> This assistant adapts to your specific goals and preferences rather than imposing a rigid predetermined methodology. Every input below directly shapes the curriculum draft.
           </div>
         </div>
       </div>

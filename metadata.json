@@ -1,6 +1,6 @@
 {
-  "name": "Nexus Curriculum Assistant",
-  "description": "An internal curriculum development and lesson planning tool for Nexus Institute K-12 reading and writing programs.",
+  "name": "Curriculum Assistant",
+  "description": "An internal curriculum development and lesson planning tool for K-12 reading and writing programs.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

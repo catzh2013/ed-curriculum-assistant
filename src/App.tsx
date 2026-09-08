@@ -23,10 +23,10 @@ const INITIAL_FORM: CurriculumForm = {
 };
 
 const STORAGE_KEYS = {
-  FORM: "nexus_curriculum_form",
-  CURRICULUM: "nexus_curriculum_output",
-  LESSONS: "nexus_lessons_output",
-  STEP: "nexus_active_step",
+  FORM: "curriculum_assistant_form",
+  CURRICULUM: "curriculum_assistant_output",
+  LESSONS: "curriculum_assistant_lessons",
+  STEP: "curriculum_assistant_step",
 };
 
 export default function App() {
@@ -420,10 +420,10 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center space-x-2">
             <span className="font-serif font-bold text-slate-200">
-              Nexus Curriculum Assistant
+              Curriculum Assistant
             </span>
             <span>•</span>
-            <span>Nexus Institute Internal Educational Tool</span>
+            <span>Internal Educational Tool</span>
           </div>
           <p className="text-slate-400 text-[11px]">
             Designed for K–12 Reading & Writing Curriculum Directors & Master Teachers

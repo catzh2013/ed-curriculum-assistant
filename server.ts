@@ -289,17 +289,17 @@ app.post("/api/curriculum/generate", async (req, res) => {
 
     const ai = getAiClient();
 
-    const systemInstruction = `You are an expert curriculum designer assisting the curriculum director at Nexus Institute, an educational institute running K-12 reading and writing programs.
+    const systemInstruction = `You are an expert curriculum designer assisting the curriculum director at an educational institute running K-12 reading and writing programs.
 
 CRITICAL GUIDELINES:
-1. Nexus does NOT yet have a finalized curriculum methodology. Do NOT pretend one exists. Use the curriculum director's specific inputs plus sound educational principles to build a strong, tailored draft.
+1. The institute does NOT yet have a finalized curriculum methodology. Do NOT pretend one exists. Use the curriculum director's specific inputs plus sound educational principles to build a strong, tailored draft.
 2. The curriculum map must contain exactly ${form.programLengthWeeks || 6} weeks.
 3. Logical progression: Skills must build sequentially on one another rather than being disconnected weekly topics.
 4. Do NOT invent specific books or resources as required unless explicitly requested in the prompt. Clearly label any suggested texts as suggestions/recommendations.
 5. The curriculum must be specifically calibrated for Grade: "${form.gradeLevel}", Subject: "${form.subject}", Student Ability: "${form.studentLevel}", Classes per week: ${form.classesPerWeek}, Class duration: "${form.classDuration}".
 6. Strictly adhere to the curriculum director's specifications on what each lesson should include and what teachers should avoid.`;
 
-    const userPrompt = `Please design a coherent ${form.programLengthWeeks}-week reading and writing curriculum draft based on the following input from the Nexus Institute Curriculum Director:
+    const userPrompt = `Please design a coherent ${form.programLengthWeeks}-week reading and writing curriculum draft based on the following input from the Curriculum Director:
 
 - Grade Level: ${form.gradeLevel}
 - Subject: ${form.subject}
@@ -355,7 +355,7 @@ app.post("/api/curriculum/revise", async (req, res) => {
 
     const ai = getAiClient();
 
-    const systemInstruction = `You are an expert curriculum designer assisting the curriculum director at Nexus Institute.
+    const systemInstruction = `You are an expert curriculum designer assisting the curriculum director.
 You are revising an existing curriculum draft based on the director's specific feedback.
 Preserve the existing strengths and structure while directly and thoroughly addressing the requested modifications.
 Maintain sound pedagogical progression and ensure the curriculum map matches the desired week count (${curriculum.curriculumMap?.length || 6} weeks).
@@ -409,7 +409,7 @@ app.post("/api/lesson/generate", async (req, res) => {
     const gradeLevel = form?.gradeLevel || "Grade Level";
     const studentLevel = form?.studentLevel || "Mixed Ability";
 
-    const systemInstruction = `You are an expert master teacher and curriculum specialist for Nexus Institute.
+    const systemInstruction = `You are an expert master teacher and curriculum specialist.
 You are generating a complete, classroom-ready lesson plan for Week ${weekNumber} of the approved curriculum "${curriculum.programTitle}".
 
 CRITICAL REQUIREMENTS:
@@ -471,7 +471,7 @@ app.post("/api/lesson/revise", async (req, res) => {
     const classDuration = form?.classDuration || "60 minutes";
     const gradeLevel = form?.gradeLevel || "Grade Level";
 
-    const systemInstruction = `You are an expert master teacher and curriculum specialist for Nexus Institute.
+    const systemInstruction = `You are an expert master teacher and curriculum specialist.
 You are revising an existing lesson plan for Week ${currentLesson.weekNumber} of "${curriculum?.programTitle || 'Curriculum'}".
 Target class duration: ${classDuration}, Grade: ${gradeLevel}.
 
@@ -523,7 +523,7 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Nexus Curriculum Assistant server running on port ${PORT}`);
+    console.log(`Curriculum Assistant server running on port ${PORT}`);
   });
 }
 

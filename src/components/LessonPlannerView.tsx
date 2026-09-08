@@ -274,7 +274,7 @@ export const LessonPlannerView: React.FC<LessonPlannerViewProps> = ({
                 Lesson Plan Criteria
               </div>
               <p>
-                Nexus lessons are strictly sized for your <strong>{form.classDuration}</strong> duration,
+                Lessons are strictly calibrated for your <strong>{form.classDuration}</strong> duration,
                 tailored to <strong>{form.gradeLevel}</strong> learners, and avoid filler tasks.
               </p>
             </div>

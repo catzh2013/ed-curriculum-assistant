@@ -18,7 +18,7 @@ export const SAMPLE_CURRICULUM_INPUTS: CurriculumForm = {
   whatToAvoid:
     "Avoid isolated grammar drill worksheets with no connection to the reading. Avoid passive silent reading for the entire class without structured tasks. Avoid vague writing prompts like 'write about your feelings' without analytical expectations.",
   additionalNotes:
-    "Nexus teachers value collaborative partner talk routines (Think-Pair-Share, Turn-and-Talk) and clear visual graphic organizers for writing. Keep pacing realistic for a 60-minute block.",
+    "Our teachers value collaborative partner talk routines (Think-Pair-Share, Turn-and-Talk) and clear visual graphic organizers for writing. Keep pacing realistic for a 60-minute block.",
 };
 
 export const SAMPLE_ELEMENTARY_INPUTS: CurriculumForm = {
